@@ -41,6 +41,7 @@ command :
  ```
 
 result :
+
  0.81 (EUR) Euro  
  0.72 (GBP) Pound Sterling  
  3.38 (PLN) Polish Zloty
@@ -53,6 +54,7 @@ To show all command you can write :
  ```
 
 Result :
+
   '--save, -s'      It's to save currencies <br/>
   '--helpers, -h'   It's to show help message <br/>
   '--version, -v'   It's give you version
