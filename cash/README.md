@@ -3,7 +3,7 @@
 
 ## Introduction :
 
-Cash convert an amount of monney to another one.
+Cash convert an amount of money to another one.
 
 
 ## Installation :
@@ -41,8 +41,8 @@ command :
  ```
 
 result :
- 0.81 (EUR) Euro
- 0.72 (GBP) Pound Sterling
+ 0.81 (EUR) Euro  
+ 0.72 (GBP) Pound Sterling  
  3.38 (PLN) Polish Zloty
 
 ## Command:
@@ -53,6 +53,6 @@ To show all command you can write :
  ```
 
 Result :
-  '--save, -s'      It's to save currencies
-  '--helpers, -h'   It's to show help message
+  '--save, -s'      It's to save currencies <br/>
+  '--helpers, -h'   It's to show help message <br/>
   '--version, -v'   It's give you version
