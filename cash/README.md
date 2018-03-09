@@ -1,12 +1,12 @@
 # cash
 
 
-##Introduction :
+## Introduction :
 
 Cash convert an amount of monney to another one.
 
 
-##Installation :
+## Installation :
 
 Go to your to your project folder :
   ```
@@ -25,7 +25,7 @@ And now to use, you have to go to the folder bin, and run :
   ```
 
 
-##How to use it :
+## How to use it :
 
 To use this library you have to write this command :
   ```
@@ -33,7 +33,7 @@ To use this library you have to write this command :
   ```
 
 
-###Example :
+### Example :
 
 command :
  ```
@@ -45,7 +45,7 @@ result :
  0.72 (GBP) Pound Sterling
  3.38 (PLN) Polish Zloty
 
-##Command:
+## Command:
 
 To show all command you can write :
  ```
