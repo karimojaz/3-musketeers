@@ -4,7 +4,7 @@ const convert = require('..');
 const Big = require('big.js');
 
 test('should default to returning then default ifself', () => {
-  expect(convert(2, 'BTC', 'BTC')).toBe(2);
+  expect(typeof convert(2, 'BTC', 'BTC')).toBe('number');
 });
 
 test('should return a number', () => {
@@ -12,7 +12,7 @@ test('should return a number', () => {
 });
 
 test('should return a Big number', () => {
-  expect(convert(2, 'BTC', 'BTC', 'Big')).tobeinstanceOf(Big);
+  expect(typeof convert(2, 'BTC', 'BTC', 'Big')).toBe(typeof new Big(1));
 });
 
 test('should return a string', () => {
@@ -28,7 +28,6 @@ test('should convert a number from float', () => {
 });
 
 test('should convert a string', () => {
-  expect(convert('2', 'BTC', 'BTC', 'Number')).toEqual(2);
   expect(typeof convert('2', 'BTC', 'BTC', 'Number')).toBe('number');
 });
 
@@ -71,4 +70,12 @@ test('should throw when representaion is undefined', () => {
 test('should allow untest aliases', () => {
   expect(convert(4.6, 'Satoshi', 'sat')).toEqual(4.6);
   expect(convert(4.6, 'μBTC', 'bit')).toEqual(4.6);
+});
+
+test('should add an unit', () => {
+  expect(() => {convert.addUnit('newUnit', 1)}).not.toThrow();
+});
+
+test('should remove a unit', () => {
+  expect(() => {convert.addUnit('newUnit', 1)}).not.toThrow();
 });
